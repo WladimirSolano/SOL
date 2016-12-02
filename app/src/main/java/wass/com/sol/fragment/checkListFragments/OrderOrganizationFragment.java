@@ -1,5 +1,4 @@
-package wass.com.sol.fragment;
-
+package wass.com.sol.fragment.checkListFragments;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -10,17 +9,16 @@ import android.view.ViewGroup;
 import wass.com.sol.R;
 
 /**
- * Created by Lasar-Soporte on 27/11/2016.
+ * Created by Lasar-Soporte on 28/11/2016.
  */
 
-public class ResultFragment extends Fragment {
+public class OrderOrganizationFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        /**
-         * Inflate the layout for this fragment
-         */
-        return inflater.inflate(R.layout.result, container, false);
+        View rootView = inflater.inflate(R.layout.order_organization_fragment, container, false);
+
+        return rootView;
     }
 
 }

@@ -1,4 +1,5 @@
-package wass.com.sol.fragment;
+package wass.com.sol.fragment.ResultsFragment;
+
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -12,14 +13,14 @@ import wass.com.sol.R;
  * Created by Lasar-Soporte on 27/11/2016.
  */
 
-public class CheckListFragment extends Fragment {
+public class ResultFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         /**
          * Inflate the layout for this fragment
          */
-        return inflater.inflate(R.layout.check_list, container, false);
+        return inflater.inflate(R.layout.result, container, false);
     }
 
 }

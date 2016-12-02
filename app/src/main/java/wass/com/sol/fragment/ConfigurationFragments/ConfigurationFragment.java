@@ -1,4 +1,4 @@
-package wass.com.sol.fragment;
+package wass.com.sol.fragment.ConfigurationFragments;
 
 
 import android.os.Bundle;

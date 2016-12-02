@@ -9,20 +9,20 @@
     <string name="action_settings">Settings</string>
 
     <!-- Navigation Drawer menu labels -->
-    <string name="nav_checkList">Lita de Chequeo</string>
+    <string name="nav_checkList">Lista de Chequeo</string>
     <string name="nav_calculation">Cálculos</string>
     <string name="nav_results">Resultados</string>
     <string name="nav_settings">Configuración</string>
 
     <!-- Toolbar titles when navigation menu item is selected -->
     <string-array name="nav_item_activity_titles">
-        <item>Lita de Chequeo</item>
+        <item>Lista de Chequeo</item>
         <item>Cálculos</item>
         <item>Resultados</item>
         <item>Configuración</item>
     </string-array>
 
-    <string name="activity_title_check_list">Lita de Chequeo</string>
+    <string name="activity_title_check_list">Lista de Chequeo</string>
     <string name="activity_title_calculation">Cálculos</string>
     <string name="activity_title_results">Resultados</string>
     <string name="activity_title_configuration">Configuración</string>

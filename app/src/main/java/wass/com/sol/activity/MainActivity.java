@@ -19,10 +19,10 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import wass.com.sol.R;
-import wass.com.sol.fragment.CalculationFragment;
-import wass.com.sol.fragment.CheckListFragment;
-import wass.com.sol.fragment.ConfigurationFragment;
-import wass.com.sol.fragment.ResultFragment;
+import wass.com.sol.fragment.CalculationFragments.CalculationFragment;
+import wass.com.sol.fragment.checkListFragments.CheckListFragment;
+import wass.com.sol.fragment.ConfigurationFragments.ConfigurationFragment;
+import wass.com.sol.fragment.ResultsFragment.ResultFragment;
 
 public class MainActivity extends AppCompatActivity  {
 
