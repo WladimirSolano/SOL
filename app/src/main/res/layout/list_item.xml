@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:id="@+id/expandedListItem">
+
+    <TextView
+        android:text="SC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView5"
+        android:textSize="14sp"
+        android:padding="3dp"
+        android:gravity="center_horizontal"
+        android:background="@drawable/border" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner"
+        android:entries="@array/spinner_options"/>
+
+    <TextView
+        android:text="TYC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView6"
+        android:textSize="14sp"
+        android:padding="3dp"
+        android:gravity="center_horizontal"
+        android:background="@drawable/border" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner6"
+        android:entries="@array/spinner_options"/>
+
+    <TextView
+        android:text="SDC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView8"
+        android:textSize="14sp"
+        android:padding="3dp"
+        android:gravity="center_horizontal"
+        android:background="@drawable/border" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner8"
+        android:entries="@array/spinner_options"/>
+
+    <TextView
+        android:text="SAC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView9"
+        android:textSize="14sp"
+        android:padding="3dp"
+        android:gravity="center_horizontal"
+        android:background="@drawable/border" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner9"
+        android:entries="@array/spinner_options"/>
+
+    <TextView
+        android:text="SCI"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView10"
+        android:textSize="14sp"
+        android:padding="3dp"
+        android:gravity="center_horizontal"
+        android:background="@drawable/border" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner10"
+        android:entries="@array/spinner_options"/>
+
+    <TextView
+        android:text="Hallazgos y Evidencias"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView18"
+        android:padding="3dp"
+        android:gravity="center_horizontal"
+        android:background="@drawable/border" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/editText6"
+        android:editable="true"
+        android:cursorVisible="false"
+        android:contextClickable="false"
+        android:enabled="true" />
+
+
+</LinearLayout>

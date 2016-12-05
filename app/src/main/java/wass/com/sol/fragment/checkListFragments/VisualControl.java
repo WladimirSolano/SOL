@@ -1,4 +1,4 @@
-package wass.com.sol.fragment.checkListFragments;
+package wass.com.sol.fragment.CheckListFragments;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;

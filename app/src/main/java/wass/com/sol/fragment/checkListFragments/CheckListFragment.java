@@ -1,4 +1,4 @@
-package wass.com.sol.fragment.checkListFragments;
+package wass.com.sol.fragment.CheckListFragments;
 
 
 import android.graphics.Color;

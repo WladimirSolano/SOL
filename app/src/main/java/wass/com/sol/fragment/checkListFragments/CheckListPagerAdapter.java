@@ -1,8 +1,10 @@
-package wass.com.sol.fragment.checkListFragments;
+package wass.com.sol.fragment.CheckListFragments;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
+
+import wass.com.sol.fragment.CheckListFragments.Cleaning.CleaningFragment;
 
 /**
  * Created by Lasar-Soporte on 28/11/2016.
