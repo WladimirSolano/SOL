@@ -31,6 +31,7 @@ public class CheckListFragment extends Fragment {
         viewPager = (ViewPager)view.findViewById(R.id.pager);
         tabLayout.setupWithViewPager(viewPager);
         tabLayout.setTabTextColors(Color.WHITE, getResources().getColor(R.color.colorAccent));
+        tabLayout.setTabMode(TabLayout.MODE_SCROLLABLE);
 
         FragmentManager manager = getChildFragmentManager();
         viewPager.setAdapter(new CheckListPagerAdapter(manager));

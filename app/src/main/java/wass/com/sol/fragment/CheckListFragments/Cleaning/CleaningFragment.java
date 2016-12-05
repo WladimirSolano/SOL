@@ -5,12 +5,8 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.ExpandableListView;
 import android.widget.LinearLayout;
-import android.widget.Spinner;
-import android.widget.TableLayout;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -25,11 +21,11 @@ import wass.com.sol.fragment.CheckListFragments.ExpandableListAdapter;
 
 public class CleaningFragment extends Fragment {
 
-    ExpandableListAdapter listAdapter;
-    ExpandableListView expListView;
-    List<String> listDataHeader;
-    HashMap<String, List<LinearLayout>> listDataChild;
-    HashMap<String, List<LinearLayout>> listDataChildAux;
+    private ExpandableListAdapter listAdapter;
+    private ExpandableListView expListView;
+    private List<String> listDataHeader;
+    private HashMap<String, List<LinearLayout>> listDataChild;
+    private HashMap<String, List<LinearLayout>> listDataChildAux;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {

@@ -5,6 +5,11 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
 import wass.com.sol.fragment.CheckListFragments.Cleaning.CleaningFragment;
+import wass.com.sol.fragment.CheckListFragments.Environment.EnvironmentFragment;
+import wass.com.sol.fragment.CheckListFragments.OrderOrganization.OrderOrganizationFragment;
+import wass.com.sol.fragment.CheckListFragments.SanitationPersonalPresentation.SanitationPersonalPresentationFragment;
+import wass.com.sol.fragment.CheckListFragments.Security.SecurityFragment;
+import wass.com.sol.fragment.CheckListFragments.VisualControl.VisualControlFragment;
 
 /**
  * Created by Lasar-Soporte on 28/11/2016.
@@ -25,7 +30,13 @@ public class CheckListPagerAdapter extends FragmentPagerAdapter{
             case 1:
                 return new OrderOrganizationFragment();
             case 2:
-                return new VisualControl();
+                return new VisualControlFragment();
+            case 3:
+                return new SanitationPersonalPresentationFragment();
+            case 4:
+                return new SecurityFragment();
+            case 5:
+                return new EnvironmentFragment();
         }
 
         return null;
@@ -34,7 +45,7 @@ public class CheckListPagerAdapter extends FragmentPagerAdapter{
     @Override
     public int getCount() {
         // get item count - equal to number of tabs
-        return 3;
+        return 6;
     }
 
 
@@ -48,6 +59,12 @@ public class CheckListPagerAdapter extends FragmentPagerAdapter{
             title = "Orden y Organización";
         } else if (position == 2) {
             title = "Control Visual";
+        }else if (position == 3) {
+            title = "Higiéne y Presentación personal";
+        }else if (position == 4) {
+            title = "Seguridad";
+        }else if (position == 5) {
+            title = "Ambiente";
         }
         return title;
     }
