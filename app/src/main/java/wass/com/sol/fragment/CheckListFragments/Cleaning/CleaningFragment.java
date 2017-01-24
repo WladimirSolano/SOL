@@ -7,6 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ExpandableListView;
 import android.widget.LinearLayout;
+import android.widget.Spinner;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -25,7 +26,7 @@ public class CleaningFragment extends Fragment {
     private ExpandableListView expListView;
     private List<String> listDataHeader;
     private HashMap<String, List<LinearLayout>> listDataChild;
-    private HashMap<String, List<LinearLayout>> listDataChildAux;
+    private Spinner floorSpinnerSC;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -48,7 +49,6 @@ public class CleaningFragment extends Fragment {
     private void prepareListData(View view) {
         listDataHeader = new ArrayList<String>();
         listDataChild = new HashMap<String, List<LinearLayout>>();
-        listDataChildAux = new HashMap<String, List<LinearLayout>>();
 
         // Adding child data
         listDataHeader.add("PISOS");
