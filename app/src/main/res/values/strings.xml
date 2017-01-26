@@ -36,5 +36,12 @@
     <string name="action_logout">Logout</string>
     <string name="action_mark_all_read">Mark All as Read</string>
     <string name="privacy_policy">Privacy Policy</string>
+    <string name="hallazgos_evidencias">Hallazgos y Evidencias</string>
+    <string name="sac">SAC</string>
+    <string name="sc">SC</string>
+    <string name="sci">SCI</string>
+    <string name="sdc">SDC</string>
+    <string name="tyc">TYC</string>
+    <string name="valor">Valor:</string>
 
 </resources>

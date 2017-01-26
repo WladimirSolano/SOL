@@ -50,7 +50,7 @@
             android:maxLines="1"
             android:selectAllOnFocus="false"
             android:clickable="false"
-            android:focusableInTouchMode="false" />
+            android:filterTouchesWhenObscured="true" />
 
         <Spinner
             android:layout_width="156dp"

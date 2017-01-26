@@ -5,10 +5,8 @@ import android.graphics.Typeface;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
 import android.widget.BaseExpandableListAdapter;
 import android.widget.LinearLayout;
-import android.widget.Spinner;
 import android.widget.TextView;
 
 import java.util.HashMap;
@@ -58,9 +56,10 @@ public class ExpandableListAdapter extends BaseExpandableListAdapter {
         }
 
         System.out.println("Group " + childText);
+        /*
         if (childText.equalsIgnoreCase("pisos")) {
             //get spinner floorSC
-            final Spinner floorSpinnerSC = (Spinner) convertView.getRootView().findViewById(R.id.spinner_sc);
+            final Spinner floorSpinnerSC = (Spinner) convertView.getRootView().findViewById(R.id.floor_sc_spinner);
             floorSpinnerSC.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
                 @Override
                 public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
@@ -73,7 +72,7 @@ public class ExpandableListAdapter extends BaseExpandableListAdapter {
                 }
             });
         }
-
+        */
 
         return convertView;
     }
