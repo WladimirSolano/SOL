@@ -5,7 +5,8 @@
     android:layout_height="match_parent"
     android:weightSum="1"
     android:id="@+id/expandedListItem"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:descendantFocusability="afterDescendants" >
 
     <TextView
         android:text="@string/sc"

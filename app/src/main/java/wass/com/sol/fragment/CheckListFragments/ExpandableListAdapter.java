@@ -13,6 +13,7 @@ import java.util.HashMap;
 import java.util.List;
 
 import wass.com.sol.R;
+import wass.com.sol.pojo.cleaning.Doors;
 
 /**
  * Created by oriana on 12/4/2016.
@@ -24,6 +25,11 @@ public class ExpandableListAdapter extends BaseExpandableListAdapter {
     private List<String> _listDataHeader; // header titles
     // child data in format of header title, child title
     private HashMap<String, List<LinearLayout>> _listDataChild;
+
+    private Doors doors = new Doors();
+
+    private View doorsView = null;
+    private View floorView = null;
 
     public ExpandableListAdapter(Context context, List<String> listDataHeader,
                                  HashMap<String, List<LinearLayout>> listChildData) {
@@ -46,16 +52,82 @@ public class ExpandableListAdapter extends BaseExpandableListAdapter {
     public View getChildView(int groupPosition, final int childPosition,
                              boolean isLastChild, View convertView, ViewGroup parent) {
 
-        //final String childText = (String) getChild(groupPosition, childPosition);
-        String childText = this._listDataHeader.get(groupPosition);
+        String childText = this._listDataHeader.get(groupPosition).toLowerCase();
+        System.out.println("Group " + childText);
+        System.out.println("Group Position " + groupPosition);
+        LayoutInflater infalInflater = (LayoutInflater) this._context
+                .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 
-        if (convertView == null) {
-            LayoutInflater infalInflater = (LayoutInflater) this._context
-                    .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-            convertView = infalInflater.inflate(R.layout.list_item, null);
+        switch (childText){
+            case ("puertas") :
+                System.out.println("puertas");
+                if (convertView == null) {
+                    convertView = infalInflater.inflate(R.layout.doors_list_item, null);
+                }else{
+                    if (doorsView == null) {
+                        doorsView = infalInflater.inflate(R.layout.doors_list_item, null);
+                    }else {
+                        convertView = doorsView;
+                    }
+                }
+                break;
+            case ("pisos") :
+                System.out.println("pisos");
+                if (convertView == null) {
+                    convertView = infalInflater.inflate(R.layout.floor_list_item, null);
+                }else{
+                    if (floorView == null) {
+                        floorView = infalInflater.inflate(R.layout.floor_list_item, null);
+                    }else {
+                        convertView = floorView;
+                    }
+                }
+                break;
+
+            case ("paredes") :
+                System.out.println("paredes");
+                if (convertView == null) {
+                    convertView = infalInflater.inflate(R.layout.walls_list_item, null);
+                }
+                break;
+            case ("extractores") :
+                System.out.println("extractores");
+                if (convertView == null) {
+                    convertView = infalInflater.inflate(R.layout.extractors_list_item, null);
+                }
+                break;
+            case ("ventanas y bloques de ventilación") :
+                System.out.println("ventanas y bloques de ventilación");
+                if (convertView == null) {
+                    convertView = infalInflater.inflate(R.layout.windows_ventilation_blocks_list_item, null);
+                }
+                break;
+            case ("luminarias") :
+                System.out.println("luminarias");
+                if (convertView == null) {
+                    convertView = infalInflater.inflate(R.layout.luminaires_list_item, null);
+                }
+                break;
+            case ("instalaciones sanitarias") :
+                System.out.println("instalaciones sanitarias");
+                if (convertView == null) {
+                    convertView = infalInflater.inflate(R.layout.sanitation_personal_presentation, null);
+                }
+                break;
+            case ("estaciones de lavado de manos") :
+                System.out.println("estaciones de lavado de manos");
+                if (convertView == null) {
+                    convertView = infalInflater.inflate(R.layout.hand_washing_station_list_item, null);
+                }
+                break;
+            case ("drenajes") :
+                System.out.println("drenajes");
+                if (convertView == null) {
+                    convertView = infalInflater.inflate(R.layout.drainage_list_item, null);
+                }
+                break;
         }
 
-        System.out.println("Group " + childText);
         /*
         if (childText.equalsIgnoreCase("pisos")) {
             //get spinner floorSC
