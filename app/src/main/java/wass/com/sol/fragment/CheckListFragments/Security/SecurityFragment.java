@@ -12,8 +12,8 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
+import wass.com.sol.Adapter.CheckList.ExpandableListAdapter;
 import wass.com.sol.R;
-import wass.com.sol.fragment.CheckListFragments.ExpandableListAdapter;
 
 /**
  * Created by Lasar-Soporte on 4/12/2016.
@@ -41,6 +41,8 @@ public class SecurityFragment extends Fragment {
 
         // setting list adapter
         expListView.setAdapter(listAdapter);
+
+        setRetainInstance(true);
 
         return rootView;
     }

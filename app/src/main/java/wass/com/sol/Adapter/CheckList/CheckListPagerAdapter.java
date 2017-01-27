@@ -1,4 +1,4 @@
-package wass.com.sol.fragment.CheckListFragments;
+package wass.com.sol.Adapter.CheckList;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -15,7 +15,7 @@ import wass.com.sol.fragment.CheckListFragments.VisualControl.VisualControlFragm
  * Created by Lasar-Soporte on 28/11/2016.
  */
 
-public class CheckListPagerAdapter extends FragmentPagerAdapter{
+public class CheckListPagerAdapter extends FragmentPagerAdapter {
 
     public CheckListPagerAdapter(FragmentManager fm) {
         super(fm);
@@ -59,11 +59,11 @@ public class CheckListPagerAdapter extends FragmentPagerAdapter{
             title = "Orden y Organización";
         } else if (position == 2) {
             title = "Control Visual";
-        }else if (position == 3) {
+        } else if (position == 3) {
             title = "Higiéne y Presentación personal";
-        }else if (position == 4) {
+        } else if (position == 4) {
             title = "Seguridad";
-        }else if (position == 5) {
+        } else if (position == 5) {
             title = "Ambiente";
         }
         return title;

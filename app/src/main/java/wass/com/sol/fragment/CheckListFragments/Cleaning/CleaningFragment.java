@@ -7,14 +7,14 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ExpandableListView;
 import android.widget.LinearLayout;
-import android.widget.Spinner;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
+import wass.com.sol.Adapter.CheckList.ExpandableListAdapter;
 import wass.com.sol.R;
-import wass.com.sol.fragment.CheckListFragments.ExpandableListAdapter;
+import wass.com.sol.activity.MainActivity;
 
 /**
  * Created by Lasar-Soporte on 28/11/2016.
@@ -26,14 +26,15 @@ public class CleaningFragment extends Fragment {
     private ExpandableListView expListView;
     private List<String> listDataHeader;
     private HashMap<String, List<LinearLayout>> listDataChild;
-    private Spinner floorSpinnerSC;
+    private MainActivity mainActivity;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+
         View rootView = inflater.inflate(R.layout.cleaning_fragment, container, false);
 
         // get the listview
-        expListView = (ExpandableListView) rootView.findViewById(R.id.expandable_list);
+        expListView = (ExpandableListView) rootView.findViewById(R.id.cleaning_expandable_list);
 
         // preparing list data
         prepareListData(rootView);
@@ -42,6 +43,8 @@ public class CleaningFragment extends Fragment {
 
         // setting list adapter
         expListView.setAdapter(listAdapter);
+
+        setRetainInstance(true);
 
         return rootView;
     }

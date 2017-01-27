@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:weightSum="1"
     android:id="@+id/expandedListItem"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:descendantFocusability="afterDescendants">
 
     <TextView
         android:text="@string/sc"
@@ -50,7 +50,7 @@
             android:maxLines="1"
             android:selectAllOnFocus="false"
             android:clickable="false"
-            android:focusableInTouchMode="false" />
+            android:filterTouchesWhenObscured="true" />
 
         <Spinner
             android:layout_width="156dp"
@@ -272,16 +272,15 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="text|textMultiLine"
         android:ems="10"
         android:id="@+id/findings_evidence"
         android:enabled="true"
+        android:background="@android:drawable/editbox_background_normal"
+        android:maxLines="10"
+        android:inputType="textLongMessage"
+        android:selectAllOnFocus="true"
         android:cursorVisible="true"
-        android:contextClickable="true"
-        android:allowUndo="true"
-        android:visibility="visible"
-        android:scrollbars="horizontal|vertical"
-        android:scrollHorizontally="false" />
+        android:gravity="center_vertical|fill" />
 
 
 </LinearLayout>

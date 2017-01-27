@@ -11,6 +11,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import wass.com.sol.Adapter.CheckList.CheckListPagerAdapter;
 import wass.com.sol.R;
 
 /**
@@ -36,8 +37,8 @@ public class CheckListFragment extends Fragment {
         FragmentManager manager = getChildFragmentManager();
         viewPager.setAdapter(new CheckListPagerAdapter(manager));
 
+        setRetainInstance(true);
+
         return view;
     }
-
-
 }

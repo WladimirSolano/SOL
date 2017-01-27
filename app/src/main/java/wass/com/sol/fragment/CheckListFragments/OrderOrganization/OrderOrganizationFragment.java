@@ -12,8 +12,8 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
+import wass.com.sol.Adapter.CheckList.ExpandableListAdapter;
 import wass.com.sol.R;
-import wass.com.sol.fragment.CheckListFragments.ExpandableListAdapter;
 
 /**
  * Created by Lasar-Soporte on 28/11/2016.
@@ -42,6 +42,8 @@ public class OrderOrganizationFragment extends Fragment {
         // setting list adapter
         expListView.setAdapter(listAdapter);
 
+        setRetainInstance(true);
+
         return rootView;
     }
 
@@ -52,7 +54,7 @@ public class OrderOrganizationFragment extends Fragment {
 
         // Adding child data
         listDataHeader.add("MAQUINARIAS Y EQUIPOS DE TRABAJO");
-        listDataHeader.add("UTENSILIOS DE TRABAJO (HERRAMIENTAS  /IMPLEMENTO DE LIMPIEZA) ASIGNADAS ");
+        listDataHeader.add("UTENSILIOS DE TRABAJO (HERRAMIENTAS/IMPLEMENTO DE LIMPIEZA) ASIGNADAS ");
         listDataHeader.add("RECIPIENTES PARA RESIDUOS Y DESECHOS ");
         listDataHeader.add("BANCOS,MESONES, ESCRITORIOS DE TRABAJO Y SILLAS ");
         listDataHeader.add("ESTANTES, ESCAPARATES, ARCHIVOS, BIBLIOTECAS ");
