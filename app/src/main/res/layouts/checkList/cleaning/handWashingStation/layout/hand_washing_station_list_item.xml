@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:id="@+id/expandedListItem"
+    android:orientation="vertical"
+    android:descendantFocusability="afterDescendants" >
+
+    <TextView
+        android:text="@string/sc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/hand_washing_station_sc_label"
+        android:textSize="14sp"
+        android:padding="3dp"
+        android:gravity="center_horizontal"
+        android:background="@drawable/border" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/hand_washing_station_sc_layout">
+
+        <TextView
+            android:text="@string/valor"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/hand_washing_station_sc_value_label"
+            android:focusable="false"
+            android:labelFor="@+id/hand_washing_station_sc_value"
+            android:textStyle="normal|bold"
+            android:textIsSelectable="false"
+            android:textAllCaps="true"
+            android:layout_weight="1"
+            android:textColor="@color/colorPrimary"
+            android:textAlignment="center"
+            android:gravity="center_vertical" />
+
+        <EditText
+            android:layout_width="95dp"
+            android:layout_height="wrap_content"
+            android:inputType="number|numberSigned"
+            android:ems="10"
+            android:id="@+id/hand_washing_station_sc_value"
+            android:enabled="true"
+            android:background="@android:drawable/editbox_background_normal"
+            android:layout_weight="1.21"
+            android:maxLines="1"
+            android:selectAllOnFocus="false"
+            android:clickable="false"
+            android:filterTouchesWhenObscured="true" />
+
+        <Spinner
+            android:layout_width="156dp"
+            android:layout_height="match_parent"
+            android:id="@+id/hand_washing_station_sc_spinner"
+            android:entries="@array/spinner_options" />
+    </LinearLayout>
+
+    <TextView
+        android:text="@string/tyc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/hand_washing_station_tyc_label"
+        android:textSize="14sp"
+        android:padding="3dp"
+        android:gravity="center_horizontal"
+        android:background="@drawable/border" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/hand_washing_station_tyc_layout">
+
+        <TextView
+            android:text="@string/valor"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/hand_washing_station_tyc_value_label"
+            android:focusable="false"
+            android:labelFor="@+id/hand_washing_station_tyc_value"
+            android:textStyle="normal|bold"
+            android:textIsSelectable="false"
+            android:textAllCaps="true"
+            android:layout_weight="1"
+            android:textColor="@color/colorPrimary"
+            android:textAlignment="center"
+            android:gravity="center_vertical" />
+
+        <EditText
+            android:layout_width="95dp"
+            android:layout_height="wrap_content"
+            android:inputType="number|numberSigned"
+            android:ems="10"
+            android:id="@+id/hand_washing_station_tyc_value"
+            android:enabled="true"
+            android:background="@android:drawable/editbox_background_normal"
+            android:layout_weight="1.25"
+            android:maxLines="1"
+            android:selectAllOnFocus="false" />
+
+        <Spinner
+            android:layout_height="match_parent"
+            android:id="@+id/hand_washing_station_tyc_spinner"
+            android:entries="@array/spinner_options"
+            android:layout_width="156dp" />
+    </LinearLayout>
+
+    <TextView
+        android:text="@string/sdc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/hand_washing_station_sdc_label"
+        android:textSize="14sp"
+        android:padding="3dp"
+        android:gravity="center_horizontal"
+        android:background="@drawable/border" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/hand_washing_station_sdc_layout">
+
+        <TextView
+            android:text="@string/valor"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/hand_washing_station_sdc_value_label"
+            android:focusable="false"
+            android:labelFor="@+id/hand_washing_station_sdc_value"
+            android:textStyle="normal|bold"
+            android:textIsSelectable="false"
+            android:textAllCaps="true"
+            android:textColor="@color/colorPrimary"
+            android:textAlignment="center"
+            android:gravity="center_vertical"
+            android:layout_weight="1.57" />
+
+        <EditText
+            android:layout_width="95dp"
+            android:layout_height="wrap_content"
+            android:inputType="number|numberSigned"
+            android:ems="10"
+            android:id="@+id/hand_washing_station_sdc_value"
+            android:enabled="true"
+            android:background="@android:drawable/editbox_background_normal"
+            android:layout_weight="1.89"
+            android:maxLines="1"
+            android:selectAllOnFocus="false" />
+
+        <Spinner
+            android:layout_height="match_parent"
+            android:id="@+id/hand_washing_station_sdc_spinner"
+            android:entries="@array/spinner_options"
+            android:layout_weight="0.09"
+            android:layout_width="156dp" />
+    </LinearLayout>
+
+    <TextView
+        android:text="@string/sac"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/hand_washing_station_sac_label"
+        android:textSize="14sp"
+        android:padding="3dp"
+        android:gravity="center_horizontal"
+        android:background="@drawable/border" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="@string/valor"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/hand_washing_station_sac_value_label"
+            android:focusable="false"
+            android:labelFor="@+id/hand_washing_station_sac_value"
+            android:textStyle="normal|bold"
+            android:textIsSelectable="false"
+            android:textAllCaps="true"
+            android:textColor="@color/colorPrimary"
+            android:textAlignment="center"
+            android:gravity="center_vertical"
+            android:layout_weight="1.61" />
+
+        <EditText
+            android:layout_width="95dp"
+            android:layout_height="wrap_content"
+            android:inputType="number|numberSigned"
+            android:ems="10"
+            android:id="@+id/hand_washing_station_sac_value"
+            android:enabled="true"
+            android:background="@android:drawable/editbox_background_normal"
+            android:layout_weight="2.01"
+            android:maxLines="1"
+            android:selectAllOnFocus="false" />
+
+        <Spinner
+            android:layout_height="match_parent"
+            android:id="@+id/hand_washing_station_sac_spinner"
+            android:entries="@array/spinner_options"
+            android:layout_weight="0.14"
+            android:layout_width="156dp" />
+    </LinearLayout>
+
+    <TextView
+        android:text="@string/sci"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/hand_washing_station_sci_label"
+        android:textSize="14sp"
+        android:padding="3dp"
+        android:gravity="center_horizontal"
+        android:background="@drawable/border" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="@string/valor"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/hand_washing_station_sci_value_label"
+            android:focusable="false"
+            android:labelFor="@+id/hand_washing_station_sci_value"
+            android:textStyle="normal|bold"
+            android:textIsSelectable="false"
+            android:textAllCaps="true"
+            android:textColor="@color/colorPrimary"
+            android:textAlignment="center"
+            android:gravity="center_vertical"
+            android:layout_weight="1.61" />
+
+        <EditText
+            android:layout_width="95dp"
+            android:layout_height="wrap_content"
+            android:inputType="number|numberSigned"
+            android:ems="10"
+            android:id="@+id/hand_washing_station_sci_value"
+            android:enabled="true"
+            android:background="@android:drawable/editbox_background_normal"
+            android:layout_weight="2.01"
+            android:maxLines="1"
+            android:selectAllOnFocus="false" />
+
+        <Spinner
+            android:layout_height="match_parent"
+            android:id="@+id/hand_washing_station_sci_spinner"
+            android:entries="@array/spinner_options"
+            android:layout_weight="0.14"
+            android:layout_width="156dp" />
+    </LinearLayout>
+
+    <TextView
+        android:text="@string/hallazgos_evidencias"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/hand_washing_station_findings_evidence_label"
+        android:padding="3dp"
+        android:gravity="center_horizontal"
+        android:background="@drawable/border" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/hand_washing_station_findings_evidence"
+        android:enabled="true"
+        android:background="@android:drawable/editbox_background_normal"
+        android:maxLines="10"
+        android:inputType="textLongMessage"
+        android:selectAllOnFocus="true"
+        android:cursorVisible="true"
+        android:gravity="center_vertical|fill" />
+
+
+</LinearLayout>
