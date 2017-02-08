@@ -20,31 +20,10 @@ android {
     sourceSets {
         main {
             res.srcDirs = [
-                'src/main/res',
-                'src/main/res/layouts',
-                'src/main/res/layouts/checkList',
-                'src/main/res/layouts/checkList/cleaning',
-                'src/main/res/layouts/checkList/cleaning/doors',
-                'src/main/res/layouts/checkList/cleaning/drainage',
-                'src/main/res/layouts/checkList/cleaning/extractors',
-                'src/main/res/layouts/checkList/cleaning/floor',
-                'src/main/res/layouts/checkList/cleaning/handWashingStation',
-                'src/main/res/layouts/checkList/cleaning/luminaires',
-                'src/main/res/layouts/checkList/cleaning/sanitation',
-                'src/main/res/layouts/checkList/cleaning/walls',
-                'src/main/res/layouts/checkList/cleaning/windowsVentilationBlocks',
-                'src/main/res/layouts/checkList/orderOrganization',
-                'src/main/res/layouts/checkList/orderOrganization/assignedWorkTools',
-                'src/main/res/layouts/checkList/orderOrganization/benchesCountersWorkDesksChairs',
-                'src/main/res/layouts/checkList/orderOrganization/billboards',
-                'src/main/res/layouts/checkList/orderOrganization/containersWasteScrap',
-                'src/main/res/layouts/checkList/orderOrganization/machineryWorkEquipment',
-                'src/main/res/layouts/checkList/orderOrganization/shelvesShopWindowsArchivesLibraries',
-                'src/main/res/layouts/checkList/visualControl',
-                'src/main/res/layouts/checkList/sanitationPersonalPresentation',
-                'src/main/res/layouts/checkList/security',
-                'src/main/res/layouts/checkList/environment',
-                'src/main/res/layouts/calculation'
+                    'src/main/res',
+                    'src/main/res/layouts',
+                    'src/main/res/layouts/checkList',
+                    'src/main/res/layouts/calculation'
             ]
         }
     }
