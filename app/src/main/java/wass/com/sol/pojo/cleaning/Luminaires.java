@@ -3,10 +3,10 @@ package wass.com.sol.pojo.cleaning;
 import wass.com.sol.utils.CheckListItem;
 
 /**
- * Created by Lasar-Soporte on 26/1/2017.
+ * Created by Lasar-Soporte on 8/2/2017.
  */
 
-public class Doors implements CheckListItem {
+public class Luminaires implements CheckListItem {
 
     private int scValue;
     private int tycValue;
@@ -24,7 +24,6 @@ public class Doors implements CheckListItem {
         return scValue;
     }
 
-    @Override
     public void setScValue(int scValue) {
         this.scValue = scValue;
     }
@@ -34,7 +33,6 @@ public class Doors implements CheckListItem {
         return tycValue;
     }
 
-    @Override
     public void setTycValue(int tycValue) {
         this.tycValue = tycValue;
     }
@@ -44,7 +42,6 @@ public class Doors implements CheckListItem {
         return sdcValue;
     }
 
-    @Override
     public void setSdcValue(int sdcValue) {
         this.sdcValue = sdcValue;
     }
@@ -54,7 +51,6 @@ public class Doors implements CheckListItem {
         return sacValue;
     }
 
-    @Override
     public void setSacValue(int sacValue) {
         this.sacValue = sacValue;
     }
@@ -64,7 +60,6 @@ public class Doors implements CheckListItem {
         return sciValue;
     }
 
-    @Override
     public void setSciValue(int sciValue) {
         this.sciValue = sciValue;
     }
@@ -74,7 +69,6 @@ public class Doors implements CheckListItem {
         return scSpinnerValue;
     }
 
-    @Override
     public void setScSpinnerValue(String scSpinnerValue) {
         this.scSpinnerValue = scSpinnerValue;
     }
@@ -84,7 +78,6 @@ public class Doors implements CheckListItem {
         return tycSpinnerValue;
     }
 
-    @Override
     public void setTycSpinnerValue(String tycSpinnerValue) {
         this.tycSpinnerValue = tycSpinnerValue;
     }
@@ -94,7 +87,6 @@ public class Doors implements CheckListItem {
         return sdcSpinnerValue;
     }
 
-    @Override
     public void setSdcSpinnerValue(String sdcSpinnerValue) {
         this.sdcSpinnerValue = sdcSpinnerValue;
     }
@@ -104,7 +96,6 @@ public class Doors implements CheckListItem {
         return sacSpinnerValue;
     }
 
-    @Override
     public void setSacSpinnerValue(String sacSpinnerValue) {
         this.sacSpinnerValue = sacSpinnerValue;
     }
@@ -114,7 +105,6 @@ public class Doors implements CheckListItem {
         return sciSpinnerValue;
     }
 
-    @Override
     public void setSciSpinnerValue(String sciSpinnerValue) {
         this.sciSpinnerValue = sciSpinnerValue;
     }

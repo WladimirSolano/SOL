@@ -109,10 +109,10 @@ public class ExpandableListAdapter extends BaseExpandableListAdapter {
             case ("instalaciones sanitarias"):
                 System.out.println("instalaciones sanitarias");
                 if (_context instanceof MainActivity) {
-                    if (((MainActivity) _context).getC_sanitationPersonalPresentationView() == null) {
-                        ((MainActivity) _context).setC_sanitationPersonalPresentationView(infalInflater.inflate(R.layout.list_item, null));
+                    if (((MainActivity) _context).getC_sanitationView() == null) {
+                        ((MainActivity) _context).setC_sanitationView(infalInflater.inflate(R.layout.list_item, null));
                     }
-                    return ((MainActivity) _context).getC_doorsView();
+                    return ((MainActivity) _context).getC_sanitationView();
                 }
             case ("estaciones de lavado de manos"):
                 System.out.println("estaciones de lavado de manos");

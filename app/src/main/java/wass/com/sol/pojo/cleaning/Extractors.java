@@ -3,10 +3,10 @@ package wass.com.sol.pojo.cleaning;
 import wass.com.sol.utils.CheckListItem;
 
 /**
- * Created by Lasar-Soporte on 26/1/2017.
+ * Created by Lasar-Soporte on 8/2/2017.
  */
 
-public class Doors implements CheckListItem {
+public class Extractors implements CheckListItem {
 
     private int scValue;
     private int tycValue;
