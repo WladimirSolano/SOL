@@ -87,7 +87,7 @@ public class MainActivity extends AppCompatActivity {
     private View s_locationExtinguishersHosesView = null;
     private View s_noticesSafetySignsView = null;
     private View s_materialSafetyDataSheetsView = null;
-    private View s_evaluationMapView = null;
+    private View s_evacuationMapView = null;
     private View s_alarmStationView = null;
     private View s_corridorConditionsAccessEscapeRoutesView = null;
     private View s_installationsContainersHazardousSubstancesMaterialsWasteView = null;
@@ -452,12 +452,12 @@ public class MainActivity extends AppCompatActivity {
         this.s_materialSafetyDataSheetsView = s_materialSafetyDataSheetsView;
     }
 
-    public View getS_evaluationMapView() {
-        return s_evaluationMapView;
+    public View getS_evacuationMapView() {
+        return s_evacuationMapView;
     }
 
-    public void setS_evaluationMapView(View s_evaluationMapView) {
-        this.s_evaluationMapView = s_evaluationMapView;
+    public void setS_evacuationMapView(View s_evaluationMapView) {
+        this.s_evacuationMapView = s_evaluationMapView;
     }
 
     public View getS_alarmStationView() {

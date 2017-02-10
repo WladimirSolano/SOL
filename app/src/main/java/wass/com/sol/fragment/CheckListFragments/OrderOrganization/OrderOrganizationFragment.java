@@ -37,7 +37,7 @@ public class OrderOrganizationFragment extends Fragment {
         // preparing list data
         prepareListData(rootView);
 
-        listAdapter = new ExpandableListAdapter(rootView.getContext(), listDataHeader, listDataChild);
+        listAdapter = new ExpandableListAdapter(rootView.getContext(), listDataHeader, listDataChild, "orderOrganization");
 
         // setting list adapter
         expListView.setAdapter(listAdapter);

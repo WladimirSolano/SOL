@@ -37,7 +37,7 @@ public class SecurityFragment extends Fragment {
         // preparing list data
         prepareListData(rootView);
 
-        listAdapter = new ExpandableListAdapter(rootView.getContext(), listDataHeader, listDataChild);
+        listAdapter = new ExpandableListAdapter(rootView.getContext(), listDataHeader, listDataChild, "security");
 
         // setting list adapter
         expListView.setAdapter(listAdapter);
@@ -60,7 +60,7 @@ public class SecurityFragment extends Fragment {
         listDataHeader.add("UBICACIÓN DE EXTINTORES/MANGUERAS");
         listDataHeader.add("AVISOS Y SEÑALIZACIÓN DE SEGURIDAD");
         listDataHeader.add("HOJAS DE DATOS DE SEGURIDAD DE LOS MATERIALES (MSDS) (HDSM)");
-        listDataHeader.add("MAPA DE EVACUACIÓNS");
+        listDataHeader.add("MAPA DE EVACUACIÓN");
         listDataHeader.add("ESTACIONES DE ALARMA");
         listDataHeader.add("CONDICIONES DE LOS PASILLOS, VÍAS DE ACCESO Y ESCAPE");
         listDataHeader.add("INSTALACIONES Y RECIPIENTES PARA SUSTANCIAS Y/O MATERIALES Y DESECHOS PELIGROSOS.");

@@ -38,7 +38,7 @@ public class SanitationPersonalPresentationFragment extends Fragment {
         // preparing list data
         prepareListData(rootView);
 
-        listAdapter = new ExpandableListAdapter(rootView.getContext(), listDataHeader, listDataChild);
+        listAdapter = new ExpandableListAdapter(rootView.getContext(), listDataHeader, listDataChild, "sanitationPersonalPresentation");
 
         // setting list adapter
         expListView.setAdapter(listAdapter);
@@ -54,7 +54,7 @@ public class SanitationPersonalPresentationFragment extends Fragment {
         listDataChild = new HashMap<String, List<LinearLayout>>();
 
         // Adding child data
-        listDataHeader.add("PRESENTACION PERSONAL");
+        listDataHeader.add("PRESENTACIÓN PERSONAL");
         listDataHeader.add("HIGIÉNE PERSONAL");
         listDataHeader.add("SALUD ");
 

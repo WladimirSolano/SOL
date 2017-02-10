@@ -37,7 +37,7 @@ public class EnvironmentFragment extends Fragment {
         // preparing list data
         prepareListData(rootView);
 
-        listAdapter = new ExpandableListAdapter(rootView.getContext(), listDataHeader, listDataChild);
+        listAdapter = new ExpandableListAdapter(rootView.getContext(), listDataHeader, listDataChild, "environment");
 
         // setting list adapter
         expListView.setAdapter(listAdapter);
@@ -55,7 +55,7 @@ public class EnvironmentFragment extends Fragment {
         // Adding child data
         listDataHeader.add("CLASIFICAR LOS DESECHOS Y RESIDUOS PELIGROSOS Y NO PELIGROSOS " );
         listDataHeader.add("IDENTIFICAR LOS RECIPIENTES SEGÚN EL TIPO DE DESECHO Y/O RESIDUO PELIGROSO Y NO PELIGROSO");
-        listDataHeader.add("DISPOSICIÓN,ALMACENAMIENTO Y MANEJO");
+        listDataHeader.add("DISPOSICIÓN, ALMACENAMIENTO Y MANEJO");
         listDataHeader.add("CONTROL DE EMISIONES Y EFLUENTES");
         listDataHeader.add("USO RACIONAL DEL AGUA");
         listDataHeader.add("USO RACIONAL DE LA LUZ");

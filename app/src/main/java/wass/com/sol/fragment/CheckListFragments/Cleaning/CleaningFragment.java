@@ -39,7 +39,7 @@ public class CleaningFragment extends Fragment {
         // preparing list data
         prepareListData(rootView);
 
-        listAdapter = new ExpandableListAdapter(rootView.getContext(), listDataHeader, listDataChild);
+        listAdapter = new ExpandableListAdapter(rootView.getContext(), listDataHeader, listDataChild, "cleaning");
 
         // setting list adapter
         expListView.setAdapter(listAdapter);
