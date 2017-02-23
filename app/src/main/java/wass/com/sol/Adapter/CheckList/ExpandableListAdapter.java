@@ -385,24 +385,24 @@ public class ExpandableListAdapter extends BaseExpandableListAdapter {
                         }
                     case (1):
                         if (_context instanceof MainActivity) {
-                            if (((MainActivity) _context).getVc_containersWasteScrap() == null) {
-                                ((MainActivity) _context).setVc_containersWasteScrap(infalInflater.inflate(R.layout.list_item, null));
+                            if (((MainActivity) _context).getVc_containersWasteScrapView() == null) {
+                                ((MainActivity) _context).setVc_containersWasteScrapView(infalInflater.inflate(R.layout.list_item, null));
                             }
-                            return ((MainActivity) _context).getVc_containersWasteScrap();
+                            return ((MainActivity) _context).getVc_containersWasteScrapView();
                         }
                     case (2):
                         if (_context instanceof MainActivity) {
-                            if (((MainActivity) _context).getVc_areas() == null) {
-                                ((MainActivity) _context).setVc_areas(infalInflater.inflate(R.layout.list_item, null));
+                            if (((MainActivity) _context).getVc_areasView() == null) {
+                                ((MainActivity) _context).setVc_areasView(infalInflater.inflate(R.layout.list_item, null));
                             }
-                            return ((MainActivity) _context).getVc_areas();
+                            return ((MainActivity) _context).getVc_areasView();
                         }
                     case (3):
                         if (_context instanceof MainActivity) {
-                            if (((MainActivity) _context).getVc_operationalInformation() == null) {
-                                ((MainActivity) _context).setVc_operationalInformation(infalInflater.inflate(R.layout.list_item, null));
+                            if (((MainActivity) _context).getVc_operationalInformationView() == null) {
+                                ((MainActivity) _context).setVc_operationalInformationView(infalInflater.inflate(R.layout.list_item, null));
                             }
-                            return ((MainActivity) _context).getVc_operationalInformation();
+                            return ((MainActivity) _context).getVc_operationalInformationView();
                         }
                 }
         }
