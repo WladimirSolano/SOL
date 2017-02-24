@@ -4,12 +4,12 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
-import wass.com.sol.fragment.CheckListFragments.Cleaning.CleaningFragment;
-import wass.com.sol.fragment.CheckListFragments.Environment.EnvironmentFragment;
-import wass.com.sol.fragment.CheckListFragments.OrderOrganization.OrderOrganizationFragment;
-import wass.com.sol.fragment.CheckListFragments.SanitationPersonalPresentation.SanitationPersonalPresentationFragment;
-import wass.com.sol.fragment.CheckListFragments.Security.SecurityFragment;
-import wass.com.sol.fragment.CheckListFragments.VisualControl.VisualControlFragment;
+import wass.com.sol.fragment.checkListFragments.cleaning.CleaningFragment;
+import wass.com.sol.fragment.checkListFragments.environment.EnvironmentFragment;
+import wass.com.sol.fragment.checkListFragments.orderOrganization.OrderOrganizationFragment;
+import wass.com.sol.fragment.checkListFragments.sanitationPersonalPresentation.SanitationPersonalPresentationFragment;
+import wass.com.sol.fragment.checkListFragments.security.SecurityFragment;
+import wass.com.sol.fragment.checkListFragments.visualControl.VisualControlFragment;
 
 /**
  * Created by Lasar-Soporte on 28/11/2016.

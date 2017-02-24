@@ -1,6 +1,6 @@
 package wass.com.sol.pojo.cleaning;
 
-import wass.com.sol.utils.CheckListItem;
+import wass.com.sol.utils.interfaces.CheckListItem;
 
 /**
  * Created by Lasar-Soporte on 8/2/2017.

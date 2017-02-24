@@ -18,7 +18,7 @@ public class CheckList {
 
     private int idCheckList = -1;
 
-    // Cleaning
+    // cleaning
     private Doors doors = new Doors();
     private Drainage drainage = new Drainage();
     private Extractors extractors = new Extractors();

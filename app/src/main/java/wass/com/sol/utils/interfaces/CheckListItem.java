@@ -1,4 +1,4 @@
-package wass.com.sol.utils;
+package wass.com.sol.utils.interfaces;
 
 /**
  * Created by Lasar-Soporte on 26/1/2017.

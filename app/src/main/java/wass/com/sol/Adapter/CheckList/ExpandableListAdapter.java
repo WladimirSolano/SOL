@@ -86,132 +86,132 @@ public class ExpandableListAdapter extends BaseExpandableListAdapter {
                 .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 
         switch (category) {
-            //Cleaning
+            //cleaning
             case ("cleaning"):
                 switch (groupPosition) {
                     //Maintaining cleanliness views
                     case (0):
                         if (_context instanceof MainActivity) {
-                            if (((MainActivity) _context).getC_doorsView() == null) {
-                                ((MainActivity) _context).setC_doorsView(infalInflater.inflate(R.layout.list_item, null));
+                            if (((MainActivity) _context).getCleaningFragment().getC_doorsView() == null) {
+                                ((MainActivity) _context).getCleaningFragment().setC_doorsView(infalInflater.inflate(R.layout.list_item, null));
                             }
-                            return ((MainActivity) _context).getC_doorsView();
+                            return ((MainActivity) _context).getCleaningFragment().getC_doorsView();
                         }
                     case (1):
                         if (_context instanceof MainActivity) {
-                            if (((MainActivity) _context).getC_floorView() == null) {
-                                ((MainActivity) _context).setC_floorView(infalInflater.inflate(R.layout.list_item, null));
+                            if (((MainActivity) _context).getCleaningFragment().getC_floorView() == null) {
+                                ((MainActivity) _context).getCleaningFragment().setC_floorView(infalInflater.inflate(R.layout.list_item, null));
                             }
-                            return ((MainActivity) _context).getC_floorView();
+                            return ((MainActivity) _context).getCleaningFragment().getC_floorView();
                         }
                     case (2):
                         if (_context instanceof MainActivity) {
-                            if (((MainActivity) _context).getC_wallsView() == null) {
-                                ((MainActivity) _context).setC_wallsView(infalInflater.inflate(R.layout.list_item, null));
+                            if (((MainActivity) _context).getCleaningFragment().getC_wallsView() == null) {
+                                ((MainActivity) _context).getCleaningFragment().setC_wallsView(infalInflater.inflate(R.layout.list_item, null));
                             }
-                            return ((MainActivity) _context).getC_wallsView();
+                            return ((MainActivity) _context).getCleaningFragment().getC_wallsView();
                         }
                     case (3):
                         if (_context instanceof MainActivity) {
-                            if (((MainActivity) _context).getC_extractorsView() == null) {
-                                ((MainActivity) _context).setC_extractorsView(infalInflater.inflate(R.layout.list_item, null));
+                            if (((MainActivity) _context).getCleaningFragment().getC_extractorsView() == null) {
+                                ((MainActivity) _context).getCleaningFragment().setC_extractorsView(infalInflater.inflate(R.layout.list_item, null));
                             }
-                            return ((MainActivity) _context).getC_extractorsView();
+                            return ((MainActivity) _context).getCleaningFragment().getC_extractorsView();
                         }
                     case (4):
                         if (_context instanceof MainActivity) {
-                            if (((MainActivity) _context).getC_windowsVentilationsBlocksView() == null) {
-                                ((MainActivity) _context).setC_windowsVentilationsBlocksView(infalInflater.inflate(R.layout.list_item, null));
+                            if (((MainActivity) _context).getCleaningFragment().getC_windowsVentilationsBlocksView() == null) {
+                                ((MainActivity) _context).getCleaningFragment().setC_windowsVentilationsBlocksView(infalInflater.inflate(R.layout.list_item, null));
                             }
-                            return ((MainActivity) _context).getC_windowsVentilationsBlocksView();
+                            return ((MainActivity) _context).getCleaningFragment().getC_windowsVentilationsBlocksView();
                         }
                     case (5):
                         if (_context instanceof MainActivity) {
-                            if (((MainActivity) _context).getC_luminairesView() == null) {
-                                ((MainActivity) _context).setC_luminairesView(infalInflater.inflate(R.layout.list_item, null));
+                            if (((MainActivity) _context).getCleaningFragment().getC_luminairesView() == null) {
+                                ((MainActivity) _context).getCleaningFragment().setC_luminairesView(infalInflater.inflate(R.layout.list_item, null));
                             }
-                            return ((MainActivity) _context).getC_luminairesView();
+                            return ((MainActivity) _context).getCleaningFragment().getC_luminairesView();
                         }
                     case (6):
                         if (_context instanceof MainActivity) {
-                            if (((MainActivity) _context).getC_sanitationView() == null) {
-                                ((MainActivity) _context).setC_sanitationView(infalInflater.inflate(R.layout.list_item, null));
+                            if (((MainActivity) _context).getCleaningFragment().getC_sanitationView() == null) {
+                                ((MainActivity) _context).getCleaningFragment().setC_sanitationView(infalInflater.inflate(R.layout.list_item, null));
                             }
-                            return ((MainActivity) _context).getC_sanitationView();
+                            return ((MainActivity) _context).getCleaningFragment().getC_sanitationView();
                         }
                     case (7):
                         if (_context instanceof MainActivity) {
-                            if (((MainActivity) _context).getC_handWashingStationView() == null) {
-                                ((MainActivity) _context).setC_handWashingStationView(infalInflater.inflate(R.layout.list_item, null));
+                            if (((MainActivity) _context).getCleaningFragment().getC_handWashingStationView() == null) {
+                                ((MainActivity) _context).getCleaningFragment().setC_handWashingStationView(infalInflater.inflate(R.layout.list_item, null));
                             }
-                            return ((MainActivity) _context).getC_handWashingStationView();
+                            return ((MainActivity) _context).getCleaningFragment().getC_handWashingStationView();
                         }
                     case (8):
                         if (_context instanceof MainActivity) {
-                            if (((MainActivity) _context).getC_drainageView() == null) {
-                                ((MainActivity) _context).setC_drainageView(infalInflater.inflate(R.layout.list_item, null));
+                            if (((MainActivity) _context).getCleaningFragment().getC_drainageView() == null) {
+                                ((MainActivity) _context).getCleaningFragment().setC_drainageView(infalInflater.inflate(R.layout.list_item, null));
                             }
-                            return ((MainActivity) _context).getC_drainageView();
+                            return ((MainActivity) _context).getCleaningFragment().getC_drainageView();
                         }
                 }
             case ("environment"):
                 switch (groupPosition) {
-                    //Mantaining Environment views
+                    //Mantaining environment views
                     case (0):
                         if (_context instanceof MainActivity) {
-                            if (((MainActivity) _context).getE_classifyHazardousNonhazardousWastesView() == null) {
-                                ((MainActivity) _context).setE_classifyHazardousNonhazardousWastesView(infalInflater.inflate(R.layout.list_item, null));
+                            if (((MainActivity) _context).getEnvironmentFragment().getE_classifyHazardousNonhazardousWastesView() == null) {
+                                ((MainActivity) _context).getEnvironmentFragment().setE_classifyHazardousNonhazardousWastesView(infalInflater.inflate(R.layout.list_item, null));
                             }
-                            return ((MainActivity) _context).getE_classifyHazardousNonhazardousWastesView();
+                            return ((MainActivity) _context).getEnvironmentFragment().getE_classifyHazardousNonhazardousWastesView();
                         }
                     case (1):
                         if (_context instanceof MainActivity) {
-                            if (((MainActivity) _context).getE_classifyContainersHazardousNonhazardousWasteView() == null) {
-                                ((MainActivity) _context).setE_classifyContainersHazardousNonhazardousWasteView(infalInflater.inflate(R.layout.list_item, null));
+                            if (((MainActivity) _context).getEnvironmentFragment().getE_classifyContainersHazardousNonhazardousWasteView() == null) {
+                                ((MainActivity) _context).getEnvironmentFragment().setE_classifyContainersHazardousNonhazardousWasteView(infalInflater.inflate(R.layout.list_item, null));
                             }
-                            return ((MainActivity) _context).getE_classifyContainersHazardousNonhazardousWasteView();
+                            return ((MainActivity) _context).getEnvironmentFragment().getE_classifyContainersHazardousNonhazardousWasteView();
                         }
                     case (2):
                         if (_context instanceof MainActivity) {
-                            if (((MainActivity) _context).getE_disposalStorageHandlingView() == null) {
-                                ((MainActivity) _context).setE_disposalStorageHandlingView(infalInflater.inflate(R.layout.list_item, null));
+                            if (((MainActivity) _context).getEnvironmentFragment().getE_disposalStorageHandlingView() == null) {
+                                ((MainActivity) _context).getEnvironmentFragment().setE_disposalStorageHandlingView(infalInflater.inflate(R.layout.list_item, null));
                             }
-                            return ((MainActivity) _context).getE_disposalStorageHandlingView();
+                            return ((MainActivity) _context).getEnvironmentFragment().getE_disposalStorageHandlingView();
                         }
                     case (3):
                         if (_context instanceof MainActivity) {
-                            if (((MainActivity) _context).getE_controlEmissionsEffluentsView() == null) {
-                                ((MainActivity) _context).setE_controlEmissionsEffluentsView(infalInflater.inflate(R.layout.list_item, null));
+                            if (((MainActivity) _context).getEnvironmentFragment().getE_controlEmissionsEffluentsView() == null) {
+                                ((MainActivity) _context).getEnvironmentFragment().setE_controlEmissionsEffluentsView(infalInflater.inflate(R.layout.list_item, null));
                             }
-                            return ((MainActivity) _context).getE_controlEmissionsEffluentsView();
+                            return ((MainActivity) _context).getEnvironmentFragment().getE_controlEmissionsEffluentsView();
                         }
                     case (4):
                         if (_context instanceof MainActivity) {
-                            if (((MainActivity) _context).getE_rationalUseWaterView() == null) {
-                                ((MainActivity) _context).setE_rationalUseWaterView(infalInflater.inflate(R.layout.list_item, null));
+                            if (((MainActivity) _context).getEnvironmentFragment().getE_rationalUseWaterView() == null) {
+                                ((MainActivity) _context).getEnvironmentFragment().setE_rationalUseWaterView(infalInflater.inflate(R.layout.list_item, null));
                             }
-                            return ((MainActivity) _context).getE_rationalUseWaterView();
+                            return ((MainActivity) _context).getEnvironmentFragment().getE_rationalUseWaterView();
                         }
                     case (5):
                         if (_context instanceof MainActivity) {
-                            if (((MainActivity) _context).getE_rationalUselightView() == null) {
-                                ((MainActivity) _context).setE_rationalUselightView(infalInflater.inflate(R.layout.list_item, null));
+                            if (((MainActivity) _context).getEnvironmentFragment().getE_rationalUselightView() == null) {
+                                ((MainActivity) _context).getEnvironmentFragment().setE_rationalUselightView(infalInflater.inflate(R.layout.list_item, null));
                             }
-                            return ((MainActivity) _context).getE_rationalUselightView();
+                            return ((MainActivity) _context).getEnvironmentFragment().getE_rationalUselightView();
                         }
                     case (6):
                         if (_context instanceof MainActivity) {
-                            if (((MainActivity) _context).getE_noiseControlView() == null) {
-                                ((MainActivity) _context).setE_noiseControlView(infalInflater.inflate(R.layout.list_item, null));
+                            if (((MainActivity) _context).getEnvironmentFragment().getE_noiseControlView() == null) {
+                                ((MainActivity) _context).getEnvironmentFragment().setE_noiseControlView(infalInflater.inflate(R.layout.list_item, null));
                             }
-                            return ((MainActivity) _context).getE_noiseControlView();
+                            return ((MainActivity) _context).getEnvironmentFragment().getE_noiseControlView();
                         }
                     case (7):
                         if (_context instanceof MainActivity) {
-                            if (((MainActivity) _context).getE_ProtectionGreenAreasView() == null) {
-                                ((MainActivity) _context).setE_ProtectionGreenAreasView(infalInflater.inflate(R.layout.list_item, null));
+                            if (((MainActivity) _context).getEnvironmentFragment().getE_ProtectionGreenAreasView() == null) {
+                                ((MainActivity) _context).getEnvironmentFragment().setE_ProtectionGreenAreasView(infalInflater.inflate(R.layout.list_item, null));
                             }
-                            return ((MainActivity) _context).getE_ProtectionGreenAreasView();
+                            return ((MainActivity) _context).getEnvironmentFragment().getE_ProtectionGreenAreasView();
                         }
                 }
             case ("orderOrganization"):
@@ -219,45 +219,45 @@ public class ExpandableListAdapter extends BaseExpandableListAdapter {
                     //Mantaining Order and Organization views
                     case (0):
                         if (_context instanceof MainActivity) {
-                            if (((MainActivity) _context).getOo_machineryWorkEquipmentView() == null) {
-                                ((MainActivity) _context).setOo_machineryWorkEquipmentView(infalInflater.inflate(R.layout.list_item, null));
+                            if (((MainActivity) _context).getOrderOrganizationFragment().getOo_machineryWorkEquipmentView() == null) {
+                                ((MainActivity) _context).getOrderOrganizationFragment().setOo_machineryWorkEquipmentView(infalInflater.inflate(R.layout.list_item, null));
                             }
-                            return ((MainActivity) _context).getOo_machineryWorkEquipmentView();
+                            return ((MainActivity) _context).getOrderOrganizationFragment().getOo_machineryWorkEquipmentView();
                         }
                     case (1):
                         if (_context instanceof MainActivity) {
-                            if (((MainActivity) _context).getOo_assignedWorkToolsView() == null) {
-                                ((MainActivity) _context).setOo_assignedWorkToolsView(infalInflater.inflate(R.layout.list_item, null));
+                            if (((MainActivity) _context).getOrderOrganizationFragment().getOo_assignedWorkToolsView() == null) {
+                                ((MainActivity) _context).getOrderOrganizationFragment().setOo_assignedWorkToolsView(infalInflater.inflate(R.layout.list_item, null));
                             }
-                            return ((MainActivity) _context).getOo_assignedWorkToolsView();
+                            return ((MainActivity) _context).getOrderOrganizationFragment().getOo_assignedWorkToolsView();
                         }
                     case (2):
                         if (_context instanceof MainActivity) {
-                            if (((MainActivity) _context).getOo_containersWasteScrapView() == null) {
-                                ((MainActivity) _context).setOo_containersWasteScrapView(infalInflater.inflate(R.layout.list_item, null));
+                            if (((MainActivity) _context).getOrderOrganizationFragment().getOo_containersWasteScrapView() == null) {
+                                ((MainActivity) _context).getOrderOrganizationFragment().setOo_containersWasteScrapView(infalInflater.inflate(R.layout.list_item, null));
                             }
-                            return ((MainActivity) _context).getOo_containersWasteScrapView();
+                            return ((MainActivity) _context).getOrderOrganizationFragment().getOo_containersWasteScrapView();
                         }
                     case (3):
                         if (_context instanceof MainActivity) {
-                            if (((MainActivity) _context).getOo_benchesCountersWorkdesksChairsView() == null) {
-                                ((MainActivity) _context).setOo_benchesCountersWorkdesksChairsView(infalInflater.inflate(R.layout.list_item, null));
+                            if (((MainActivity) _context).getOrderOrganizationFragment().getOo_benchesCountersWorkdesksChairsView() == null) {
+                                ((MainActivity) _context).getOrderOrganizationFragment().setOo_benchesCountersWorkdesksChairsView(infalInflater.inflate(R.layout.list_item, null));
                             }
-                            return ((MainActivity) _context).getOo_benchesCountersWorkdesksChairsView();
+                            return ((MainActivity) _context).getOrderOrganizationFragment().getOo_benchesCountersWorkdesksChairsView();
                         }
                     case (4):
                         if (_context instanceof MainActivity) {
-                            if (((MainActivity) _context).getOo_shelvesShopwindowsArchivesLibrariesView() == null) {
-                                ((MainActivity) _context).setOo_shelvesShopwindowsArchivesLibrariesView(infalInflater.inflate(R.layout.list_item, null));
+                            if (((MainActivity) _context).getOrderOrganizationFragment().getOo_shelvesShopwindowsArchivesLibrariesView() == null) {
+                                ((MainActivity) _context).getOrderOrganizationFragment().setOo_shelvesShopwindowsArchivesLibrariesView(infalInflater.inflate(R.layout.list_item, null));
                             }
-                            return ((MainActivity) _context).getOo_shelvesShopwindowsArchivesLibrariesView();
+                            return ((MainActivity) _context).getOrderOrganizationFragment().getOo_shelvesShopwindowsArchivesLibrariesView();
                         }
                     case (5):
                         if (_context instanceof MainActivity) {
-                            if (((MainActivity) _context).getOo_billboardsView() == null) {
-                                ((MainActivity) _context).setOo_billboardsView(infalInflater.inflate(R.layout.list_item, null));
+                            if (((MainActivity) _context).getOrderOrganizationFragment().getOo_billboardsView() == null) {
+                                ((MainActivity) _context).getOrderOrganizationFragment().setOo_billboardsView(infalInflater.inflate(R.layout.list_item, null));
                             }
-                            return ((MainActivity) _context).getOo_billboardsView();
+                            return ((MainActivity) _context).getOrderOrganizationFragment().getOo_billboardsView();
                         }
                 }
             case ("sanitationPersonalPresentation"):
@@ -265,24 +265,24 @@ public class ExpandableListAdapter extends BaseExpandableListAdapter {
                     //Mantaining Sanitation and personal presentation views
                     case (0):
                         if (_context instanceof MainActivity) {
-                            if (((MainActivity) _context).getHpp_personalPresentationView() == null) {
-                                ((MainActivity) _context).setHpp_personalPresentationView(infalInflater.inflate(R.layout.list_item, null));
+                            if (((MainActivity) _context).getSanitationPersonalPresentationFragment().getHpp_personalPresentationView() == null) {
+                                ((MainActivity) _context).getSanitationPersonalPresentationFragment().setHpp_personalPresentationView(infalInflater.inflate(R.layout.list_item, null));
                             }
-                            return ((MainActivity) _context).getHpp_personalPresentationView();
+                            return ((MainActivity) _context).getSanitationPersonalPresentationFragment().getHpp_personalPresentationView();
                         }
                     case (1):
                         if (_context instanceof MainActivity) {
-                            if (((MainActivity) _context).getHpp_personalHygieneView() == null) {
-                                ((MainActivity) _context).setHpp_personalHygieneView(infalInflater.inflate(R.layout.list_item, null));
+                            if (((MainActivity) _context).getSanitationPersonalPresentationFragment().getHpp_personalHygieneView() == null) {
+                                ((MainActivity) _context).getSanitationPersonalPresentationFragment().setHpp_personalHygieneView(infalInflater.inflate(R.layout.list_item, null));
                             }
-                            return ((MainActivity) _context).getHpp_personalHygieneView();
+                            return ((MainActivity) _context).getSanitationPersonalPresentationFragment().getHpp_personalHygieneView();
                         }
                     case (2):
                         if (_context instanceof MainActivity) {
-                            if (((MainActivity) _context).getHpp_healthView() == null) {
-                                ((MainActivity) _context).setHpp_healthView(infalInflater.inflate(R.layout.list_item, null));
+                            if (((MainActivity) _context).getSanitationPersonalPresentationFragment().getHpp_healthView() == null) {
+                                ((MainActivity) _context).getSanitationPersonalPresentationFragment().setHpp_healthView(infalInflater.inflate(R.layout.list_item, null));
                             }
-                            return ((MainActivity) _context).getHpp_healthView();
+                            return ((MainActivity) _context).getSanitationPersonalPresentationFragment().getHpp_healthView();
                         }
                 }
             case ("security"):
@@ -290,87 +290,87 @@ public class ExpandableListAdapter extends BaseExpandableListAdapter {
                     //Mantaining Security views
                     case (0):
                         if (_context instanceof MainActivity) {
-                            if (((MainActivity) _context).getS_usePersonalProtectiveEquipmentView() == null) {
-                                ((MainActivity) _context).setS_usePersonalProtectiveEquipmentView(infalInflater.inflate(R.layout.list_item, null));
+                            if (((MainActivity) _context).getSecurityFragment().getS_usePersonalProtectiveEquipmentView() == null) {
+                                ((MainActivity) _context).getSecurityFragment().setS_usePersonalProtectiveEquipmentView(infalInflater.inflate(R.layout.list_item, null));
                             }
-                            return ((MainActivity) _context).getS_usePersonalProtectiveEquipmentView();
+                            return ((MainActivity) _context).getSecurityFragment().getS_usePersonalProtectiveEquipmentView();
                         }
                     case (1):
                         if (_context instanceof MainActivity) {
-                            if (((MainActivity) _context).getS_complianceBasicSafetyStandardsView() == null) {
-                                ((MainActivity) _context).setS_complianceBasicSafetyStandardsView(infalInflater.inflate(R.layout.list_item, null));
+                            if (((MainActivity) _context).getSecurityFragment().getS_complianceBasicSafetyStandardsView() == null) {
+                                ((MainActivity) _context).getSecurityFragment().setS_complianceBasicSafetyStandardsView(infalInflater.inflate(R.layout.list_item, null));
                             }
-                            return ((MainActivity) _context).getS_complianceBasicSafetyStandardsView();
+                            return ((MainActivity) _context).getSecurityFragment().getS_complianceBasicSafetyStandardsView();
                         }
                     case (2):
                         if (_context instanceof MainActivity) {
-                            if (((MainActivity) _context).getS_conditionsElectricalInstallationsView() == null) {
-                                ((MainActivity) _context).setS_conditionsElectricalInstallationsView(infalInflater.inflate(R.layout.list_item, null));
+                            if (((MainActivity) _context).getSecurityFragment().getS_conditionsElectricalInstallationsView() == null) {
+                                ((MainActivity) _context).getSecurityFragment().setS_conditionsElectricalInstallationsView(infalInflater.inflate(R.layout.list_item, null));
                             }
-                            return ((MainActivity) _context).getS_conditionsElectricalInstallationsView();
+                            return ((MainActivity) _context).getSecurityFragment().getS_conditionsElectricalInstallationsView();
                         }
                     case (3):
                         if (_context instanceof MainActivity) {
-                            if (((MainActivity) _context).getS_operatingConditionsSafetyEquipmentView() == null) {
-                                ((MainActivity) _context).setS_operatingConditionsSafetyEquipmentView(infalInflater.inflate(R.layout.list_item, null));
+                            if (((MainActivity) _context).getSecurityFragment().getS_operatingConditionsSafetyEquipmentView() == null) {
+                                ((MainActivity) _context).getSecurityFragment().setS_operatingConditionsSafetyEquipmentView(infalInflater.inflate(R.layout.list_item, null));
                             }
-                            return ((MainActivity) _context).getS_operatingConditionsSafetyEquipmentView();
+                            return ((MainActivity) _context).getSecurityFragment().getS_operatingConditionsSafetyEquipmentView();
                         }
                     case (4):
                         if (_context instanceof MainActivity) {
-                            if (((MainActivity) _context).getS_locationExtinguishersHosesView() == null) {
-                                ((MainActivity) _context).setS_locationExtinguishersHosesView(infalInflater.inflate(R.layout.list_item, null));
+                            if (((MainActivity) _context).getSecurityFragment().getS_locationExtinguishersHosesView() == null) {
+                                ((MainActivity) _context).getSecurityFragment().setS_locationExtinguishersHosesView(infalInflater.inflate(R.layout.list_item, null));
                             }
-                            return ((MainActivity) _context).getS_locationExtinguishersHosesView();
+                            return ((MainActivity) _context).getSecurityFragment().getS_locationExtinguishersHosesView();
                         }
                     case (5):
                         if (_context instanceof MainActivity) {
-                            if (((MainActivity) _context).getS_noticesSafetySignsView() == null) {
-                                ((MainActivity) _context).setS_noticesSafetySignsView(infalInflater.inflate(R.layout.list_item, null));
+                            if (((MainActivity) _context).getSecurityFragment().getS_noticesSafetySignsView() == null) {
+                                ((MainActivity) _context).getSecurityFragment().setS_noticesSafetySignsView(infalInflater.inflate(R.layout.list_item, null));
                             }
-                            return ((MainActivity) _context).getS_noticesSafetySignsView();
+                            return ((MainActivity) _context).getSecurityFragment().getS_noticesSafetySignsView();
                         }
                     case (6):
                         if (_context instanceof MainActivity) {
-                            if (((MainActivity) _context).getS_materialSafetyDataSheetsView() == null) {
-                                ((MainActivity) _context).setS_materialSafetyDataSheetsView(infalInflater.inflate(R.layout.list_item, null));
+                            if (((MainActivity) _context).getSecurityFragment().getS_materialSafetyDataSheetsView() == null) {
+                                ((MainActivity) _context).getSecurityFragment().setS_materialSafetyDataSheetsView(infalInflater.inflate(R.layout.list_item, null));
                             }
-                            return ((MainActivity) _context).getS_materialSafetyDataSheetsView();
+                            return ((MainActivity) _context).getSecurityFragment().getS_materialSafetyDataSheetsView();
                         }
                     case (7):
                         if (_context instanceof MainActivity) {
-                            if (((MainActivity) _context).getS_evacuationMapView() == null) {
-                                ((MainActivity) _context).setS_evacuationMapView(infalInflater.inflate(R.layout.list_item, null));
+                            if (((MainActivity) _context).getSecurityFragment().getS_evacuationMapView() == null) {
+                                ((MainActivity) _context).getSecurityFragment().setS_evacuationMapView(infalInflater.inflate(R.layout.list_item, null));
                             }
-                            return ((MainActivity) _context).getS_evacuationMapView();
+                            return ((MainActivity) _context).getSecurityFragment().getS_evacuationMapView();
                         }
                     case (8):
                         if (_context instanceof MainActivity) {
-                            if (((MainActivity) _context).getS_alarmStationView() == null) {
-                                ((MainActivity) _context).setS_alarmStationView(infalInflater.inflate(R.layout.list_item, null));
+                            if (((MainActivity) _context).getSecurityFragment().getS_alarmStationView() == null) {
+                                ((MainActivity) _context).getSecurityFragment().setS_alarmStationView(infalInflater.inflate(R.layout.list_item, null));
                             }
-                            return ((MainActivity) _context).getS_alarmStationView();
+                            return ((MainActivity) _context).getSecurityFragment().getS_alarmStationView();
                         }
                     case (9):
                         if (_context instanceof MainActivity) {
-                            if (((MainActivity) _context).getS_corridorConditionsAccessEscapeRoutesView() == null) {
-                                ((MainActivity) _context).setS_corridorConditionsAccessEscapeRoutesView(infalInflater.inflate(R.layout.list_item, null));
+                            if (((MainActivity) _context).getSecurityFragment().getS_corridorConditionsAccessEscapeRoutesView() == null) {
+                                ((MainActivity) _context).getSecurityFragment().setS_corridorConditionsAccessEscapeRoutesView(infalInflater.inflate(R.layout.list_item, null));
                             }
-                            return ((MainActivity) _context).getS_corridorConditionsAccessEscapeRoutesView();
+                            return ((MainActivity) _context).getSecurityFragment().getS_corridorConditionsAccessEscapeRoutesView();
                         }
                     case (10):
                         if (_context instanceof MainActivity) {
-                            if (((MainActivity) _context).getS_installationsContainersHazardousSubstancesMaterialsWasteView() == null) {
-                                ((MainActivity) _context).setS_installationsContainersHazardousSubstancesMaterialsWasteView(infalInflater.inflate(R.layout.list_item, null));
+                            if (((MainActivity) _context).getSecurityFragment().getS_installationsContainersHazardousSubstancesMaterialsWasteView() == null) {
+                                ((MainActivity) _context).getSecurityFragment().setS_installationsContainersHazardousSubstancesMaterialsWasteView(infalInflater.inflate(R.layout.list_item, null));
                             }
-                            return ((MainActivity) _context).getS_installationsContainersHazardousSubstancesMaterialsWasteView();
+                            return ((MainActivity) _context).getSecurityFragment().getS_installationsContainersHazardousSubstancesMaterialsWasteView();
                         }
                     case (11):
                         if (_context instanceof MainActivity) {
-                            if (((MainActivity) _context).getS_managementHazardousWastesSubstancesMaterialsView() == null) {
-                                ((MainActivity) _context).setS_managementHazardousWastesSubstancesMaterialsView(infalInflater.inflate(R.layout.list_item, null));
+                            if (((MainActivity) _context).getSecurityFragment().getS_managementHazardousWastesSubstancesMaterialsView() == null) {
+                                ((MainActivity) _context).getSecurityFragment().setS_managementHazardousWastesSubstancesMaterialsView(infalInflater.inflate(R.layout.list_item, null));
                             }
-                            return ((MainActivity) _context).getS_managementHazardousWastesSubstancesMaterialsView();
+                            return ((MainActivity) _context).getSecurityFragment().getS_managementHazardousWastesSubstancesMaterialsView();
                         }
                 }
             case ("visualControl"):
@@ -378,31 +378,31 @@ public class ExpandableListAdapter extends BaseExpandableListAdapter {
                     //Mantaining Visual control views
                     case (0):
                         if (_context instanceof MainActivity) {
-                            if (((MainActivity) _context).getVc_assignedMachineryWorkEquipmentView() == null) {
-                                ((MainActivity) _context).setVc_assignedMachineryWorkEquipmentView(infalInflater.inflate(R.layout.list_item, null));
+                            if (((MainActivity) _context).getVisualControlFragment().getVc_assignedMachineryWorkEquipmentView() == null) {
+                                ((MainActivity) _context).getVisualControlFragment().setVc_assignedMachineryWorkEquipmentView(infalInflater.inflate(R.layout.list_item, null));
                             }
-                            return ((MainActivity) _context).getVc_assignedMachineryWorkEquipmentView();
+                            return ((MainActivity) _context).getVisualControlFragment().getVc_assignedMachineryWorkEquipmentView();
                         }
                     case (1):
                         if (_context instanceof MainActivity) {
-                            if (((MainActivity) _context).getVc_containersWasteScrapView() == null) {
-                                ((MainActivity) _context).setVc_containersWasteScrapView(infalInflater.inflate(R.layout.list_item, null));
+                            if (((MainActivity) _context).getVisualControlFragment().getVc_containersWasteScrapView() == null) {
+                                ((MainActivity) _context).getVisualControlFragment().setVc_containersWasteScrapView(infalInflater.inflate(R.layout.list_item, null));
                             }
-                            return ((MainActivity) _context).getVc_containersWasteScrapView();
+                            return ((MainActivity) _context).getVisualControlFragment().getVc_containersWasteScrapView();
                         }
                     case (2):
                         if (_context instanceof MainActivity) {
-                            if (((MainActivity) _context).getVc_areasView() == null) {
-                                ((MainActivity) _context).setVc_areasView(infalInflater.inflate(R.layout.list_item, null));
+                            if (((MainActivity) _context).getVisualControlFragment().getVc_areasView() == null) {
+                                ((MainActivity) _context).getVisualControlFragment().setVc_areasView(infalInflater.inflate(R.layout.list_item, null));
                             }
-                            return ((MainActivity) _context).getVc_areasView();
+                            return ((MainActivity) _context).getVisualControlFragment().getVc_areasView();
                         }
                     case (3):
                         if (_context instanceof MainActivity) {
-                            if (((MainActivity) _context).getVc_operationalInformationView() == null) {
-                                ((MainActivity) _context).setVc_operationalInformationView(infalInflater.inflate(R.layout.list_item, null));
+                            if (((MainActivity) _context).getVisualControlFragment().getVc_operationalInformationView() == null) {
+                                ((MainActivity) _context).getVisualControlFragment().setVc_operationalInformationView(infalInflater.inflate(R.layout.list_item, null));
                             }
-                            return ((MainActivity) _context).getVc_operationalInformationView();
+                            return ((MainActivity) _context).getVisualControlFragment().getVc_operationalInformationView();
                         }
                 }
         }

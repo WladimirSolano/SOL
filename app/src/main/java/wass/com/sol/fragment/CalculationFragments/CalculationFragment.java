@@ -1,4 +1,4 @@
-package wass.com.sol.fragment.CalculationFragments;
+package wass.com.sol.fragment.calculationFragments;
 
 
 import android.os.Bundle;
