@@ -14,9 +14,9 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
-import wass.com.sol.Adapter.CheckList.ExpandableListAdapter;
 import wass.com.sol.R;
 import wass.com.sol.activity.MainActivity;
+import wass.com.sol.utils.ExpandableListAdapter;
 
 /**
  * Created by Lasar-Soporte on 28/11/2016.
@@ -866,6 +866,8 @@ public class OrderOrganizationFragment extends Fragment {
         oo_billboards_sci_spinner = (Spinner) getOo_billboardsView().findViewById(R.id.sci_spinner);
         //Billboards Evidence
         oo_billboards_evidence = (EditText) getOo_billboardsView().findViewById(R.id.findings_evidence);
+
+        mainActivity.setOrderOrganizationFragment(this);
     }
 
 }

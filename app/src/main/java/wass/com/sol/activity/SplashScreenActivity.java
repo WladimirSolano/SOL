@@ -28,6 +28,7 @@ public class SplashScreenActivity extends Activity{
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         // Hide title bar
         requestWindowFeature(Window.FEATURE_NO_TITLE);
+        setTheme(R.style.AppTheme_SplashTheme);
 
         setContentView(R.layout.home);
 

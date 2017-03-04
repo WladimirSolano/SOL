@@ -29,4 +29,11 @@
         <item name="android:popupBackground">#DFFFFFFF</item>
     </style>
 
+    <style name="AppTheme.SplashTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowBackground">@drawable/ic_home_background</item>
+    </style>
 </resources>

@@ -11,8 +11,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import wass.com.sol.Adapter.CheckList.CheckListPagerAdapter;
 import wass.com.sol.R;
+import wass.com.sol.utils.CheckListPagerAdapter;
 
 /**
  * Created by Lasar-Soporte on 27/11/2016.
@@ -26,6 +26,7 @@ public class CheckListFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         // TODO Auto-generated method stub
+
         View view = inflater.inflate(R.layout.check_list, container, false);
 
         tabLayout = (TabLayout) view.findViewById(R.id.tab_layout);

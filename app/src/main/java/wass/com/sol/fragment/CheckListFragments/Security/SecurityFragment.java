@@ -14,9 +14,9 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
-import wass.com.sol.Adapter.CheckList.ExpandableListAdapter;
 import wass.com.sol.R;
 import wass.com.sol.activity.MainActivity;
+import wass.com.sol.utils.ExpandableListAdapter;
 
 /**
  * Created by Lasar-Soporte on 4/12/2016.
@@ -1666,5 +1666,7 @@ public class SecurityFragment extends Fragment {
         s_managementHazardousWastesSubstancesMaterials_sci_spinner = (Spinner) getS_managementHazardousWastesSubstancesMaterialsView().findViewById(R.id.sci_spinner);
         //Management Hazardous Wastes Substances Materials Evidence
         s_managementHazardousWastesSubstancesMaterials_evidence = (EditText) getS_managementHazardousWastesSubstancesMaterialsView().findViewById(R.id.findings_evidence);
+
+        mainActivity.setSecurityFragment(this);
     }
 }

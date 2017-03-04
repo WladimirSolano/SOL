@@ -1,4 +1,4 @@
-package wass.com.sol.Adapter.CheckList;
+package wass.com.sol.utils;
 
 import android.content.Context;
 import android.graphics.Typeface;

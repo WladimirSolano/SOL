@@ -1,4 +1,4 @@
-package wass.com.sol.Adapter.CheckList;
+package wass.com.sol.utils;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -17,6 +17,8 @@ import wass.com.sol.fragment.checkListFragments.visualControl.VisualControlFragm
 
 public class CheckListPagerAdapter extends FragmentPagerAdapter {
 
+    private CleaningFragment cleaningFragment = null;
+
     public CheckListPagerAdapter(FragmentManager fm) {
         super(fm);
     }
@@ -26,7 +28,10 @@ public class CheckListPagerAdapter extends FragmentPagerAdapter {
 
         switch (index) {
             case 0:
-                return new CleaningFragment();
+                if (cleaningFragment == null) {
+                    cleaningFragment = new CleaningFragment();
+                }
+                return cleaningFragment;
             case 1:
                 return new OrderOrganizationFragment();
             case 2:

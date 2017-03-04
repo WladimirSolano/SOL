@@ -14,7 +14,6 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
-import wass.com.sol.Adapter.CheckList.ExpandableListAdapter;
 import wass.com.sol.R;
 import wass.com.sol.activity.MainActivity;
 import wass.com.sol.pojo.cleaning.Doors;
@@ -26,6 +25,7 @@ import wass.com.sol.pojo.cleaning.Luminaires;
 import wass.com.sol.pojo.cleaning.Sanitation;
 import wass.com.sol.pojo.cleaning.Walls;
 import wass.com.sol.pojo.cleaning.WindowsVentilationBlocks;
+import wass.com.sol.utils.ExpandableListAdapter;
 
 /**
  * Created by Lasar-Soporte on 28/11/2016.
@@ -38,6 +38,8 @@ public class CleaningFragment extends Fragment {
     private List<String> listDataHeader;
     private HashMap<String, List<LinearLayout>> listDataChild;
     private MainActivity mainActivity;
+
+    private View rootView;
 
     private Doors doors;
     private Drainage drainage;
@@ -1141,24 +1143,43 @@ public class CleaningFragment extends Fragment {
     }
 
     @Override
+    public void onActivityCreated(Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
+        if (savedInstanceState != null) {
+            //Restore the fragment's state here
+            System.out.println("Se restaura una instancia");
+        }
+    }
+
+    @Override
+    public void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        System.out.println("Se creo una instancia");
+        //Save the fragment's state here
+    }
+
+    @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
+        System.out.println("Se inicializa la vista");
         mainActivity = (MainActivity) getActivity();
 
-        View rootView = inflater.inflate(R.layout.cleaning_fragment, container, false);
+        if (rootView == null){
+            rootView = inflater.inflate(R.layout.cleaning_fragment, container, false);
 
-        // get the listview
-        expListView = (ExpandableListView) rootView.findViewById(R.id.cleaning_expandable_list);
+            // get the listview
+            expListView = (ExpandableListView) rootView.findViewById(R.id.cleaning_expandable_list);
 
-        // preparing list data
-        prepareListData(rootView);
+            // preparing list data
+            prepareListData(rootView);
 
-        listAdapter = new ExpandableListAdapter(rootView.getContext(), listDataHeader, listDataChild, "cleaning");
+            listAdapter = new ExpandableListAdapter(rootView.getContext(), listDataHeader, listDataChild, "cleaning");
 
-        // setting list adapter
-        expListView.setAdapter(listAdapter);
+            // setting list adapter
+            expListView.setAdapter(listAdapter);
 
-        setRetainInstance(true);
+            setRetainInstance(true);
+        }
 
         return rootView;
     }
